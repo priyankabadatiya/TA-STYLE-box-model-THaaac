@@ -1,0 +1,97 @@
+<!---
+### Create a page according to the layout shown below
+
+![Box Model Exercise 6](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/box-model/ex-6.png)
+
+#### Problems for exercise 2 in the layout
+
+- Each parent container has width of 600px and border of 1px;
+- Each children box has width 180px and height 100px as well as margin of 10px;
+- Each child box which is having border has border-width 1px.
+- Note in the first container the boxes do not have any border.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+--->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <title>boxmodel 6</title>
+</head>
+
+<body>
+    <div class="center">
+        <h1>The Box Model, Box-sizing, and Box- shadow</h1>
+
+        <div class="container_1 center">
+            <hr class="line">
+            <h2>Exercise 1</h2>
+            <div class='container_1_box center'>
+                <div></div>
+            </div>
+            <span>
+                <span class="content"> </span>content
+            </span>
+            <span>
+                <span class="padding"></span>padding
+            </span>
+            <span>
+                <span class="border"></span>border
+            </span>
+            <span>
+                <span class="margin"></span>margin
+            </span>
+        </div>
+        <div class="container_2 center">
+            <hr class="line">
+            <h2>Exercise 2</h2>
+            <p>no border on this boxes</p>
+            <div class='container_2_box center'>
+                <div class="parent">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+
+            </div>
+            <hr class="line">
+        </div>
+        <div class="container_3 center">
+
+            <p>1 px border on these boxes</p>
+            <div class='container_3_box center'>
+                <div class="parent left">
+                    <div class="box-1"></div>
+                    <div class="box-1"></div>
+                    <div>
+                        <div class="box-1"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container_4 center">
+            <hr class="line">
+            <p>no border on this boxes</p>
+            <div class='container_4_box center'>
+                <div class="parent">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
